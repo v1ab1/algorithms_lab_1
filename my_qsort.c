@@ -1,8 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
-#include <math.h>
 
 typedef int (*cmp_t)(const void*, const void*);
 int swap(void* a, void* b, size_t size);
