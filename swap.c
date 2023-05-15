@@ -1,10 +1,11 @@
-#include <string.h>
+#include <stdio.h>
 
-void swap(void* a, void* b, size_t size) {
-  char* p = a;
-  char* q = b;
-  char tmp[size];
-  memcpy(tmp, p, size);
-  memcpy(p, q, size);
-  memcpy(q, tmp, size);
+int swap(void* a, void* b, size_t size) {
+  char* p = a, * q = b, tmp;
+  for (size_t i = 0; i < size; ++i) {
+    tmp = p[i];
+    p[i] = q[i];
+    q[i] = tmp;
+  }
+  return 0;
 }
