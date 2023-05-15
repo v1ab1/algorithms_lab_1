@@ -4,7 +4,7 @@
 typedef int (*cmp_t)(const void*, const void*);
 int compare_strings(const void* a, const void* b);
 int my_qsort(void* base, size_t nmemb, size_t size, cmp_t cmp);
-void experiment();
+int xmlReader();
 
 int main() {
   char ans;
@@ -12,7 +12,7 @@ int main() {
   scanf(" %c", &ans);
   getchar();
   if (ans == 'y' || ans == 'Y') {
-    experiment();
+    xmlReader();
     getchar();
   }
 

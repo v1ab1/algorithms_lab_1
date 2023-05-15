@@ -8,15 +8,7 @@ typedef int (*cmp_t)(const void*, const void*);
 int swap(void* a, void* b, size_t size);
 int my_qsort(void* base, size_t nmemb, size_t size, cmp_t cmp);
 
-void experiment() {
-  int count, length, max;
-  printf("\nКакое количество чисел будет в одном массиве?\n");
-  scanf("%d", &length);
-  printf("\nКакое число может быть максимальным?\n");
-  scanf("%d", &max);
-  printf("\nКакое количество массивов для проверки вы хотите сгенерировать?\n");
-  scanf("%d", &count);
-
+void experiment(int count, int length, int max) {
   int total[count];
   srand(time(NULL));
   for (int k = 0; k < count; k++) {
@@ -34,5 +26,5 @@ void experiment() {
   }
   average = average / count;
 
-  printf("\nПолучившееся среднее количество swap: %d", average);
+  printf("\nПолучившееся среднее количество swap: %d\n", average);
 }
