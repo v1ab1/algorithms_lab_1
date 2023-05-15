@@ -12,7 +12,7 @@
 
 ## To build
 
-### `gcc index.c compare_strings.c swap.c my_qsort.c experiment.c -o index -lxml2`
+### `gcc index.c compare_strings.c swap.c my_qsort.c experiment.c -o ../index -lxml2`
 
 ## To run
 
@@ -20,4 +20,4 @@
 
 ## If you want to build tests
 
-### `gcc test.c swap.c my_qsort.c -o test`
+### `gcc test.c swap.c my_qsort.c -o ../test`
