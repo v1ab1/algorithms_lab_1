@@ -33,10 +33,9 @@ void parseNode(xmlNode *node) {
 }
 
 int xmlReader() {
-  xmlDoc *doc = NULL;
+  const char* filePath = "./code/experiment.xml";
+  xmlDoc *doc = xmlReadFile(filePath, NULL, 0);
   xmlNode *root = NULL;
-
-  doc = xmlReadFile("experiment.xml", NULL, 0);
   if (doc == NULL) {
     printf("Failed to parse XML document.\n");
     return 1;

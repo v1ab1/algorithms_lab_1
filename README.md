@@ -10,6 +10,10 @@
 
 ### `brew install libxml2`
 
+### on Windows
+
+### `pacman -S mingw-w64-x86_64-libxml2`
+
 ## To build
 
 ### `gcc index.c compare_strings.c swap.c my_qsort.c experiment.c xmlReader.c -o ../index -lxml2`
